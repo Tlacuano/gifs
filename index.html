@@ -84,7 +84,7 @@
     <script src="./js/feather-icons.js"></script>
     <script>
       fetch(
-        "http://api.giphy.com/v1/gifs/random?api_key=14Mri0I7asUJyiMVTh1P9o5JfhfEwUPD"
+        "https://api.giphy.com/v1/gifs/random?api_key=14Mri0I7asUJyiMVTh1P9o5JfhfEwUPD"
       )
         .then((response) => response.json())
         .then((data) => {
@@ -117,7 +117,7 @@
         console.log(event);
         if (event.keyCode !== 13) return;
         fetch(
-          `http://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${search.value}`
+          `https://api.giphy.com/v1/gifs/search?api_key=${api_key}&q=${search.value}`
         )
           .then((response) => response.json())
           .then((data) => {
